@@ -1,0 +1,1 @@
+Design and implement a basic command-line interface snake game in Python. The game should include movement controls for the snake, the ability of the snake to consume food, and game-over conditions when the snake hits a wall or itself.

@@ -1,0 +1,34 @@
+classDiagram
+    class Main {
+        +main() void
+    }
+    class Game {
+        -Snake snake
+        -Food food
+        -Scoreboard scoreboard
+        -game_over bool
+        +start_game() void
+        +game_loop() void
+        +end_game() void
+    }
+    class Snake {
+        -body list
+        -direction string
+        +change_direction(new_direction: string) void
+        +move() bool
+        +grow() void
+    }
+    class Food {
+        -position tuple
+        +relocate() void
+    }
+    class Scoreboard {
+        -score int
+        -high_score int
+        +update_score(points: int) void
+        +display_score() void
+    }
+    Main --> Game
+    Game --> Snake
+    Game --> Food
+    Game --> Scoreboard
